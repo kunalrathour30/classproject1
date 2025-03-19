@@ -1,0 +1,77 @@
+<!-- <!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-amber-400">
+  <h1 class="text-3xl font-bold underline">
+    
+  </h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dashboard Layout</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white p-6 shadow-lg">
+    <nav class="space-y-4">
+      <a href="#" class="block text-gray-600 hover:text-black">Dashboard</a>
+      <a href="#" class="block text-gray-600 hover:text-black">All Clients</a>
+      <a href="#" class="block text-gray-600 hover:text-black">Technocrative Solutions</a>
+      <a href="#" class="block text-gray-600 hover:text-black">Ecofusion Innovations</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8 space-y-6">
+
+    <!-- Dashboard Card -->
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="font-semibold text-lg mb-2">Dashboard</h2>
+      <p class="text-gray-500 mb-4">Some explanation here about the dashboard.</p>
+
+      <!-- Getting Started -->
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold mb-3">Getting Started</h3>
+        
+        <ul class="space-y-2">
+          <li><span class="font-medium">•</span> Personal Information</li>
+          <li><span class="font-medium">•</span> Add your first project</li>
+          <li>
+            <span class="font-medium">•</span> Add Content to this Client 
+            <span class="ml-2 bg-gray-200 text-xs px-2 py-1 rounded-full">New</span>
+          </li>
+          <li><span class="font-medium">•</span> Use Document Editor</li>
+        </ul>
+
+        <!-- Progress Bar -->
+        <div class="mt-4">
+          <div class="h-2 bg-gray-200 rounded">
+            <div class="h-2 bg-blue-500 rounded" style="width: 33%;"></div>
+          </div>
+          <p class="text-sm text-gray-500 mt-1">33% completed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favourite Clients Section -->
+    <div class="bg-white p-4 rounded-lg shadow">
+      <h2 class="font-semibold text-lg mb-4">Favourite Clients</h2>
+      <button class="w-full bg-gray-200 p-3 rounded mb-2">Technocrative Solutions</button>
+      <button class="w-full bg-gray-200 p-3 rounded">Ecofusion Innovations</button>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+    
+    <!-- Container Example -->
+    <div class="container mx-auto bg-white p-4 shadow-md">
+        <h1 class="text-2xl font-bold">Tailwind CSS Demo</h1>
+    </div>
+    
+    <!-- Sizing Example -->
+    <div class="w-64 h-32 bg-blue-500 mt-4 text-white flex justify-center items-center">
+        Sizing Example
+    </div>
+    
+    <!-- Display & Visibility -->
+    <div class="block bg-green-500 text-white p-2 mt-4">Visible Block</div>
+    <div class="hidden bg-red-500 text-white p-2 mt-2">Hidden Block</div>
+    
+    <!-- Float Example -->
+    <img src="in.jpg" class="float-right mr-4">
+    <p class="clear-both">Text wrapped around floated image.</p>
+    
+    <!-- Layout using Flexbox -->
+    <div class="flex justify-around items-center bg-gray-200 p-4 mt-4">
+        <div class="bg-blue-300 p-4">Flex 1</div>
+        <div class="bg-red-300 p-4">Flex 2</div>
+    </div>
+    
+    <!-- Z-Index Example -->
+    <div class="relative z-10 bg-yellow-300 p-4 mt-4">Z-Index 10</div>
+    <div class="relative z-0 bg-gray-400 p-4">Z-Index 0</div>
+    
+    <!-- Object Fit & Position -->
+    <img src="proj.png" class="w-32 h-32 object-cover mt-4">
+    
+    <!-- Grid Example -->
+    <div class="grid grid-cols-3 gap-4 mt-4">
+        <div class="bg-blue-400 p-4">1</div>
+        <div class="bg-red-400 p-4">2</div>
+        <div class="bg-green-400 p-4">3</div>
+    </div>
+    
+    <!-- Justify & Align -->
+    <div class="flex justify-between items-center mt-4 bg-gray-300 p-4">
+        <p>Left</p>
+        <p>Center</p>
+        <p>Right</p>
+    </div>
+
+</body>
+</html>

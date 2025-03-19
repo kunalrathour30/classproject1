@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .dashboard {
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #1E88E5;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toggle-switch {
+            width: 40px;
+            height: 20px;
+            background: lightgray;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .toggle-switch::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            transition: 0.3s;
+        }
+
+        .toggle-switch.active {
+            background: gold;
+        }
+
+        .toggle-switch.active::before {
+            left: 20px;
+        }
+
+        .temperature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .temperature button {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            border: none;
+            background: #e3e3e3;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .temperature span {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .lock {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lock span {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .locked {
+            background: green;
+            color: white;
+        }
+
+        .unlocked {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="header">
+            Smart Home Dashboard
+            <p style="font-size: 14px; margin: 5px 0 0;">Temperature set to <span id="currentTemp">90°F</span></p>
+        </div>
+
+        <div class="content">
+            <!-- Lights Control -->
+            <div class="section">
+                <div>
+                    <strong>Living Room Lights</strong>
+                    <p style="font-size: 12px;">Last updated: <span id="lightTime">--:--</span></p>
+                </div>
+                <div class="toggle-switch" id="lightSwitch"></div>
+            </div>
+
+            <!-- Temperature Control -->
+            <div class="section">
+                <strong>Temperature Control</strong>
+                <div class="temperature">
+                    <button id="decreaseTemp">-</button>
+                    <span id="temperature">90°F</span>
+                    <button id="increaseTemp">+</button>
+                </div>
+            </div>
+
+            <!-- Door Lock Control -->
+            <div class="section align-left">
+                <div>
+                    <strong>Front Door Lock</strong>
+                    <p style="font-size: 12px;">Last activity: <span id="lockTime">--:--</span></p>
+                </div>
+                <div class="lock">
+                    <span id="lockStatus" class="locked">
+                        🔒 Locked
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lights Toggle
+        const lightSwitch = document.getElementById("lightSwitch");
+        const lightTime = document.getElementById("lightTime");
+
+        lightSwitch.addEventListener("click", () => {
+            lightSwitch.classList.toggle("active");
+            updateTime(lightTime);
+        });
+
+        // Temperature Control
+        const tempDisplay = document.getElementById("temperature");
+        const currentTempDisplay = document.getElementById("currentTemp");
+        let temperature = 90;
+
+        document.getElementById("increaseTemp").addEventListener("click", () => {
+            temperature++;
+            updateTemperature();
+        });
+
+        document.getElementById("decreaseTemp").addEventListener("click", () => {
+            if (temperature > 50) temperature--;
+            updateTemperature();
+        });
+
+        function updateTemperature() {
+            tempDisplay.textContent = `${temperature}°F`;
+            currentTempDisplay.textContent = `${temperature}°F`;
+        }
+
+        // Door Lock Toggle
+        const lockStatus = document.getElementById("lockStatus");
+        const lockTime = document.getElementById("lockTime");
+
+        lockStatus.addEventListener("click", () => {
+            if (lockStatus.classList.contains("locked")) {
+                lockStatus.classList.remove("locked");
+                lockStatus.classList.add("unlocked");
+                lockStatus.innerHTML = "🔓 Unlocked";
+            } else {
+                lockStatus.classList.remove("unlocked");
+                lockStatus.classList.add("locked");
+                lockStatus.innerHTML = "🔒 Locked";
+            }
+            updateTime(lockTime);
+        });
+
+        // Function to update time
+        function updateTime(element) {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            element.textContent = timeString;
+        }
+    </script>
+
+</body>
+</html>

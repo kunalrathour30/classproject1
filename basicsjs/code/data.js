@@ -55,4 +55,4 @@ console.log (newString0ne.trim());
 const url ="https://hitesh.com/hitesh%2Øchoudhary"
 console.log(url.replace('%20','-') )
 console.log (url.includes( 'sundar' ) )
-console.log (gameName. split( '-'));
+console.log (gameName. split( '-'));      

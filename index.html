@@ -1,74 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        h1{
-            color: red;
-        }
-        body{
-            background-color: rgba(255, 0, 174, 0);
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kunal
-    </title>
+    <title>Entrepreneurial Network</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<link rel="stylesheet" href="index.css">
 <body>
-    <!--heading tags-->
-    <h1><b>Registration form</h1>
-    <!-- <h5>1</h5> -->
-    <!-- <h2>2</h2> -->
-    <!-- <h3>3</h3>
-    <h4>6</h4>
-    <h6>6</h6> -->
-    <!-- <ul type="square">
-    <li>iem 1</li>
-    <li>item 2</li>
-</ul> -->
-
-<!-- <header>
-    <nav>
-        <a href=""> ABOUT US</a>
-        <a href="about.html">old one</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-lightbulb me-2"></i>Entrepreneurial Network
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-</header> -->
-<br>
 
-<label for="username">username: </label>
-<input type ="text" placeholder="enter username" required>
-<br><br>
-<label for="email:">email:</label>
-<input type="text" placeholder=" enter email"><br><br>
-<label for="phone no">p.no.:</label>
-<input type="number" placeholder=" enter p.no."><br>
-<br>
-<label for="pass">password:</label>
-<input type="password" placeholder=" enter password"><br>
-<br>
-<label for="dob">DOB:</label>
-<input type="date" placeholder=" enter date"><br><br>
-<label for="bio">Bio:</label>
-<textarea name="" id=""></textarea>
-<br>
-gender:<input type="radio" value="male">male <input type="radio" value="female">female
-<br>
-<input type="checkbox" name="" id="">subscribed 
-<br>
-<label for="">select country:</select></label>
-<select name="" id="">
-    <option value="">India</option>
-    <option value="">china</option>
-</select>
-<br><br>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold">Connect with Fellow Entrepreneurs</h1>
+                    <p class="lead">Join our community of innovators, share ideas, and grow your network.</p>
+                    <div class="mt-4">
+                        <a href="pages/register.html" class="btn btn-light btn-lg me-2">Get Started</a>
+                        <a href="pages/login.html" class="btn btn-outline-light btn-lg">Login</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/hero-image.svg" alt="Entrepreneurial Network" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<button>SUBMIT</button>
-<footer>
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Join Our Network?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Connect</h3>
+                            <p class="card-text">Find and connect with like-minded entrepreneurs from around the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Share Ideas</h3>
+                            <p class="card-text">Share your entrepreneurial journey and get valuable feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Grow</h3>
+                            <p class="card-text">Learn from others' experiences and expand your business network.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        &copy;all right reserved 2025
-    </p>
-</footer>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Members Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"This platform helped me connect with investors for my startup. The community is incredibly supportive!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="assets/images/testimonial-1.jpg" alt="User" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Sarah Johnson</h5>
+                                    <small class="text-muted">Tech Startup Founder</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"The networking opportunities here are unmatched. I've found mentors and partners for my business."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="assets/images/testimonial-2.jpg" alt="User" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Michael Chen</h5>
+                                    <small class="text-muted">E-commerce Entrepreneur</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"The insights and advice I've received from this community have been invaluable for my business growth."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="assets/images/testimonial-3.jpg" alt="User" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h5 class="mb-0">Emily Rodriguez</h5>
+                                    <small class="text-muted">Social Enterprise Founder</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Join Our Community?</h2>
+            <p class="lead mb-4">Create your account today and start connecting with entrepreneurs worldwide.</p>
+            <a href="pages/register.html" class="btn btn-primary btn-lg">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Entrepreneurial Network</h5>
+                    <p>Connecting entrepreneurs worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="pages/about.html" class="text-white">About</a></li>
+                        <li><a href="pages/contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Entrepreneurial Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Entrepreneurial Network</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-lightbulb me-2"></i>Entrepreneurial Network
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="network.html">My Network</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html">Messages</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-2" width="32" height="32">
+                            John Doe
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <div class="profile-header bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="profile-image mb-3">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-camera me-1"></i>Change Photo
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mb-1">John Doe</h1>
+                    <p class="text-muted mb-2">Tech Entrepreneur</p>
+                    <p class="mb-3">Passionate about technology and innovation. Building the future of digital solutions.</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary me-2">Edit Profile</button>
+                        <button class="btn btn-outline-primary">Share Profile</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Connection Stats</h5>
+                            <div class="row text-center mt-3">
+                                <div class="col-4">
+                                    <h4 class="mb-0">245</h4>
+                                    <small class="text-muted">Connections</small>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="mb-0">89</h4>
+                                    <small class="text-muted">Posts</small>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="mb-0">1.2K</h4>
+                                    <small class="text-muted">Followers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-4">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-4 mb-4">
+                <!-- About -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">About</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Tech entrepreneur with 10+ years of experience in software development and digital innovation. Founded two successful startups and currently working on revolutionizing the e-commerce space.</p>
+                        <hr>
+                        <div class="mb-2">
+                            <strong><i class="fas fa-building me-2"></i>Company:</strong>
+                            <p class="ms-4 mb-0">TechInnovate Solutions</p>
+                        </div>
+                        <div class="mb-2">
+                            <strong><i class="fas fa-map-marker-alt me-2"></i>Location:</strong>
+                            <p class="ms-4 mb-0">San Francisco, CA</p>
+                        </div>
+                        <div class="mb-2">
+                            <strong><i class="fas fa-globe me-2"></i>Website:</strong>
+                            <p class="ms-4 mb-0"><a href="#" class="text-decoration-none">www.techinnovate.com</a></p>
+                        </div>
+                        <div class="mb-2">
+                            <strong><i class="fas fa-envelope me-2"></i>Email:</strong>
+                            <p class="ms-4 mb-0">john.doe@techinnovate.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Skills</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">Entrepreneurship</span>
+                            <span class="badge bg-primary">Software Development</span>
+                            <span class="badge bg-primary">Digital Marketing</span>
+                            <span class="badge bg-primary">E-commerce</span>
+                            <span class="badge bg-primary">Startup Management</span>
+                            <span class="badge bg-primary">Product Strategy</span>
+                            <span class="badge bg-primary">UI/UX Design</span>
+                            <span class="badge bg-primary">Data Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Experience</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h6 class="mb-0">Founder & CEO</h6>
+                            <p class="text-muted mb-1">TechInnovate Solutions</p>
+                            <small class="text-muted">2018 - Present</small>
+                            <p class="mt-2 mb-0">Leading a team of developers and designers to create innovative digital solutions for businesses.</p>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <h6 class="mb-0">CTO</h6>
+                            <p class="text-muted mb-1">Digital Ventures</p>
+                            <small class="text-muted">2015 - 2018</small>
+                            <p class="mt-2 mb-0">Managed technology infrastructure and led development teams for a growing e-commerce platform.</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h6 class="mb-0">Senior Developer</h6>
+                            <p class="text-muted mb-1">Tech Solutions Inc.</p>
+                            <small class="text-muted">2012 - 2015</small>
+                            <p class="mt-2 mb-0">Developed and maintained web applications for enterprise clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-8 mb-4">
+                <!-- Tabs -->
+                <ul class="nav nav-tabs mb-4" id="profileTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="posts-tab" data-bs-toggle="tab" data-bs-target="#posts" type="button" role="tab">Posts</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab">Projects</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="connections-tab" data-bs-toggle="tab" data-bs-target="#connections" type="button" role="tab">Connections</button>
+                    </li>
+                </ul>
+                
+                <!-- Tab Content -->
+                <div class="tab-content" id="profileTabsContent">
+                    <!-- Posts Tab -->
+                    <div class="tab-pane fade show active" id="posts" role="tabpanel">
+                        <!-- Create Post -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                    <div class="flex-grow-1">
+                                        <textarea class="form-control" placeholder="Share your thoughts, ideas, or updates..." rows="3"></textarea>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <button class="btn btn-outline-primary btn-sm me-2">
+                                                    <i class="fas fa-image me-1"></i>Photo
+                                                </button>
+                                                <button class="btn btn-outline-primary btn-sm">
+                                                    <i class="fas fa-link me-1"></i>Link
+                                                </button>
+                                            </div>
+                                            <button class="btn btn-primary">Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 1 -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                    <div>
+                                        <h6 class="mb-0">John Doe</h6>
+                                        <small class="text-muted">Tech Entrepreneur • 3 days ago</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Excited to announce that our latest product has reached 10,000 users! This is a significant milestone for our team. Thank you to all our early adopters for their feedback and support. #startup #milestone</p>
+                                <img src="../assets/images/post-2.jpg" alt="Post" class="img-fluid rounded mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-thumbs-up me-1"></i>Like
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-comment me-1"></i>Comment
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-share-square me-1"></i>Share
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 2 -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                    <div>
+                                        <h6 class="mb-0">John Doe</h6>
+                                        <small class="text-muted">Tech Entrepreneur • 1 week ago</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Looking for talented UI/UX designers to join our team. If you're passionate about creating beautiful and functional interfaces, reach out! #hiring #design</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-thumbs-up me-1"></i>Like
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-comment me-1"></i>Comment
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-share-square me-1"></i>Share
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 3 -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                    <div>
+                                        <h6 class="mb-0">John Doe</h6>
+                                        <small class="text-muted">Tech Entrepreneur • 2 weeks ago</small>
+                                    </div>
+                                </div>
+                                <p class="card-text">Just attended an amazing conference on the future of AI in business. The insights were incredible! Here are my key takeaways: [Link to blog post] #AI #futureoftech</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-thumbs-up me-1"></i>Like
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-comment me-1"></i>Comment
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i class="far fa-share-square me-1"></i>Share
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projects Tab -->
+                    <div class="tab-pane fade" id="projects" role="tabpanel">
+                        <div class="row">
+                            <!-- Project 1 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/project-1.jpg" class="card-img-top" alt="Project">
+                                    <div class="card-body">
+                                        <h5 class="card-title">E-commerce Platform</h5>
+                                        <p class="card-text">A comprehensive e-commerce solution for small businesses.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">Completed 2022</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/project-2.jpg" class="card-img-top" alt="Project">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mobile App</h5>
+                                        <p class="card-text">A productivity app for entrepreneurs on the go.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">In Progress</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 3 -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow-sm h-100">
+                                    <img src="../assets/images/project-3.jpg" class="card-img-top" alt="Project">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Analytics Dashboard</h5>
+                                        <p class="card-text">Data visualization tools for business analytics.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">Completed 2021</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Add Project -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow-sm h-100 border-dashed">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <div class="text-center">
+                                            <i class="fas fa-plus-circle fa-3x mb-3 text-primary"></i>
+                                            <h5>Add New Project</h5>
+                                            <button class="btn btn-outline-primary">Create Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Connections Tab -->
+                    <div class="tab-pane fade" id="connections" role="tabpanel">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Your Connections</h5>
+                                    <div class="input-group" style="width: 300px;">
+                                        <input type="text" class="form-control" placeholder="Search connections...">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/testimonial-1.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Sarah Johnson</h6>
+                                                <small class="text-muted">Tech Startup Founder</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Message</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/testimonial-2.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Michael Chen</h6>
+                                                <small class="text-muted">E-commerce Entrepreneur</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Message</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/testimonial-3.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Emily Rodriguez</h6>
+                                                <small class="text-muted">Social Enterprise Founder</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Message</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/suggestion-1.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">David Wilson</h6>
+                                                <small class="text-muted">FinTech Entrepreneur</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Message</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/suggestion-2.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Lisa Thompson</h6>
+                                                <small class="text-muted">HealthTech Founder</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white text-center">
+                                <a href="network.html" class="text-decoration-none">View All Connections</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Entrepreneurial Network</h5>
+                    <p>Connecting entrepreneurs worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Entrepreneurial Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

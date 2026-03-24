@@ -52,3 +52,38 @@ let fruits=["apple","banana"];
 fruits.push("mango");
 
 fruits
+ 
+//write a async function to read a file using try and catch in reactjs
+
+// async function readFile(filePath) {
+//     try {
+//         const fs = require('fs').promises;
+//         const data = await fs               
+//             .readFile(filePath, 'utf8');
+//         console.log(data);
+//     } catch (error) {
+//         console.error('Error reading file:', error);
+//     }
+
+// }
+
+// readFile('example.txt');
+
+// const server = require('http').createServer();
+const server = HTMLOutputElement.createServer();
+
+server.on('request', (req, res) => {
+    res.end('Hello, World!');
+});
+
+server.listen(3000, () => {
+    console.log('Server is listening on port 3000');
+});
+
+
+
+
+
+
+
+

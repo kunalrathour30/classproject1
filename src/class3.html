@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Paragraph Styler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-600 flex items-center justify-center h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold mb-4 text-center">Dynamic Paragraph Styler</h2>
+        <p class="text-center mb-6">Customize Your Paragraph</p>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="textColor">Text Color:</label>
+            <select id="textColor" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="fontSize">Font Size:</label>
+            <select id="fontSize" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="backgroundColor">Background Color:</label>
+            <select id="backgroundColor" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="white">White</option>
+                <option value="lightgray">Light Gray</option>
+                <option value="lightyellow">Light Yellow</option>
+            </select>
+        </div>
+
+        <button id="applyStyles" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+            Apply Styles
+        </button>
+
+        <p id="styledParagraph" class="mt-6 p-4 border rounded">This is a sample paragraph. Change my style!</p>
+    </div>
+
+    <script>
+        const textColorSelect = document.getElementById('textColor');
+        const fontSizeSelect = document.getElementById('fontSize');
+        const backgroundColorSelect = document.getElementById('backgroundColor');
+        const applyStylesButton = document.getElementById('applyStyles');
+        const styledParagraph = document.getElementById('styledParagraph');
+
+        applyStylesButton.addEventListener('click', () => {
+            const textColor = textColorSelect.value;
+            const fontSize = fontSizeSelect.value;
+            const backgroundColor = backgroundColorSelect.value;
+
+            styledParagraph.style.color = textColor;
+            styledParagraph.style.fontSize = fontSize === 'small' ? '12px' : fontSize === 'medium' ? '16px' : '20px';
+            styledParagraph.style.backgroundColor = backgroundColor;
+        });
+    </script>
+
+</body>
+</html>

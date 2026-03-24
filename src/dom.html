@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Change Image</title>
+    <script>
+        function changeHeading(newHeading) {
+            const heading = document.getElementById('main-heading');
+            heading.textContent = newHeading;
+            heading.style.color="green"
+        }
+        function changeImage(newSrc) {
+            const image = document.getElementById('main-image');
+            image.src = newSrc;
+            image.image.size="10px"        }
+        function changeLink(newHref) {
+            const link = document.getElementById('main-link');
+            link.href = newHref;
+            link.innerHTML="go to youtube"
+            link.style.color="red"
+        }
+        function addNewItem(newItemText) {
+                const newItem = document.createElement('li');
+                newItem.textContent = newItemText;
+                const list = document.getElementById('item-list');
+                if (!list) {
+                    const newList = document.createElement('ul');
+                    newList.id = 'item-list';
+                    document.body.appendChild(newList);
+                    newList.appendChild(newItem);
+                } else {
+                    list.appendChild(newItem);
+                }
+            }
+        function removeItem(itemText) {
+                const list = document.getElementById('item-list');
+                if (list) {
+                    const items = list.getElementsByTagName('li');
+                    for (let i = items.length - 1; i >= 0; i--) {
+                        if (items[i].textContent === itemText) {
+                            list.removeChild(items[i]);
+                        }
+                    }
+                }
+            }
+    </script>
+</head>
+<body>
+    <h1 id="main-heading">Original Heading</h1>
+    <button onclick="changeHeading('New Heading')">Change Heading</button>
+    <br><br>
+    <img id="main-image" src="in.jpg" alt="Original Image" width="300">
+    <button onclick="changeImage('fb.png')">Change Image</button>
+    <br><br>
+    <a id="main-link" href="https://www.google.com">Original Link</a>
+    <button onclick="changeLink('https://www.youtube.com/')">Change Link</button>
+    <br><br>
+    <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <input type="text" id="new-item-input" placeholder="Enter new item">
+    <button onclick="addNewItem(document.getElementById('new-item-input').value)">Add Item</button>
+    <button onclick="removeItem('Item 1')">Remove Item 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </button>
+</body>
+</html>

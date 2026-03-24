@@ -6,4 +6,3 @@ accCity = "Saharanpur"
 // accountId=2
 
 console.log(accountId);
-// console.table use for many print

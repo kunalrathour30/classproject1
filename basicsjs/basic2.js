@@ -30,4 +30,16 @@ console.log(nega)
 let str1 ="concatination"
 let str2 = " string"
 let str3 = str1 + str2
-console.log(str3)
+//console.log(str3)
+
+
+
+console.log('os');
+console.log(Os.platform());
+console.log(os.hostname());
+console.log(os.cpus());
+
+
+// const math = require("./.math");
+// console.log(math.add(3,7));
+// console.log(math.subtract(5,6));

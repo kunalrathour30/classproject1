@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Entrepreneurial Network</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <div class="dashboard-content">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="fas fa-lightbulb me-2"></i>Entrepreneurial Network
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="network.html">My Network</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="messages.html">Messages</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-2" width="32" height="32">
+                                    John Doe
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                                    <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="container py-4">
+                <div class="row">
+                    <!-- Left Sidebar -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle mb-3" width="120" height="120">
+                                <h5 class="card-title mb-1">John Doe</h5>
+                                <p class="text-muted mb-3">Tech Entrepreneur</p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary">View Profile</button>
+                                    <button class="btn btn-outline-primary">Edit Profile</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Quick Links</h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                                            <i class="fas fa-user-friends me-2"></i>
+                                            My Network
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                                            <i class="fas fa-briefcase me-2"></i>
+                                            My Projects
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                                            <i class="fas fa-calendar me-2"></i>
+                                            Events
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                                            <i class="fas fa-bookmark me-2"></i>
+                                            Saved Posts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Content Area -->
+                    <div class="col-md-6 mb-4">
+                        <!-- Create Post -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                    <div class="flex-grow-1">
+                                        <textarea class="form-control" placeholder="Share your thoughts, ideas, or updates..." rows="3"></textarea>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div>
+                                                <button class="btn btn-outline-primary btn-sm me-2">
+                                                    <i class="fas fa-image me-1"></i>Photo
+                                                </button>
+                                                <button class="btn btn-outline-primary btn-sm">
+                                                    <i class="fas fa-link me-1"></i>Link
+                                                </button>
+                                            </div>
+                                            <button class="btn btn-primary">Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feed -->
+                        <div class="feed">
+                            <!-- Post 1 -->
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                        <div>
+                                            <h6 class="mb-0">John Doe</h6>
+                                            <small class="text-muted">Tech Entrepreneur • 2 hours ago</small>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Just launched our new product! Check out the amazing features we've added. #startup #innovation</p>
+                                    <img src="../assets/images/post-1.jpg" alt="Post" class="img-fluid rounded mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-thumbs-up me-1"></i>Like
+                                        </button>
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-comment me-1"></i>Comment
+                                        </button>
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-share-square me-1"></i>Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Post 2 -->
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <img src="../assets/images/profile-placeholder.jpg" alt="Profile" class="rounded-circle me-3" width="48" height="48">
+                                        <div>
+                                            <h6 class="mb-0">John Doe</h6>
+                                            <small class="text-muted">Tech Entrepreneur • 5 hours ago</small>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Looking for talented developers to join our team. If you're passionate about technology and innovation, reach out! #hiring #tech</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-thumbs-up me-1"></i>Like
+                                        </button>
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-comment me-1"></i>Comment
+                                        </button>
+                                        <button class="btn btn-outline-primary btn-sm">
+                                            <i class="far fa-share-square me-1"></i>Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Sidebar -->
+                    <div class="col-md-3 mb-4">
+                        <!-- Network Suggestions -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">People You May Know</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/suggestion-1.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Sarah Johnson</h6>
+                                                <small class="text-muted">Tech Startup Founder</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/images/suggestion-2.jpg" alt="User" class="rounded-circle me-3" width="48" height="48">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">Michael Chen</h6>
+                                                <small class="text-muted">E-commerce Entrepreneur</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Upcoming Events -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Upcoming Events</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item">
+                                        <h6 class="mb-1">Tech Startup Summit</h6>
+                                        <p class="mb-1"><i class="far fa-calendar me-2"></i>June 15, 2023</p>
+                                        <small class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>San Francisco, CA</small>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <h6 class="mb-1">Entrepreneurship Workshop</h6>
+                                        <p class="mb-1"><i class="far fa-calendar me-2"></i>June 20, 2023</p>
+                                        <small class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Online Event</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending Topics -->
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Trending Topics</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge">#startup</span>
+                                    <span class="badge">#innovation</span>
+                                    <span class="badge">#entrepreneurship</span>
+                                    <span class="badge">#tech</span>
+                                    <span class="badge">#business</span>
+                                    <span class="badge">#marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

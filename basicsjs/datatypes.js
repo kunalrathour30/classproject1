@@ -6,18 +6,18 @@
 // array objects functions 
 
 
-// let myYoutubename = "hiteshchoudharydotcom";
-// let anothername = myYoutubename;
-// anothername= "chaiaurcode";
+let myYoutubename = "hiteshchoudharydotcom";
+let anothername = myYoutubename;
+anothername= "chaiaurcode";
 
-// console.log(myYoutubename) ;
-// console.log(anothername) ;
-// let userOne = {
-//     email: "user@googte. com",
-//     upi: "user@ybl" }
-// let userTwo= userOne;
+console.log(myYoutubename) ;
+console.log(anothername) ;
+let userOne = {
+    email: "user@googte. com",
+    upi: "user@ybl" }
+let userTwo= userOne;
 
-// userTwo.email= "hitesh@googte.com"
+userTwo.email= "hitesh@googte.com"
 
-// console.log(userOne.email) ;
-// console.log(userTwo.email) ;
+console.log(userOne.email) ;
+console.log(userTwo.email) ;
